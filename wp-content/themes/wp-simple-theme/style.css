@@ -1,0 +1,39 @@
+/*
+Theme Name: WP Simple Theme
+Text Domain: 
+Version: 1.0
+Description: A simple theme for WordPress
+Tags: Bootstrap, HTML5, CSS3, Responsive, Mobile Friendly
+Author: Leandro Arturi
+Author URI: https://wordpress.org/
+Theme URI: https://wordpress.org/themes/twentytwenty/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+
+.suscribir {
+    background-image: url('./images/wave.svg');
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+@media(max-width: 576px) {
+    .suscribir input {
+        width: 100%;
+    }
+    .suscribir {
+        height: 370px;
+    }
+    .display-5 {
+        font-size: 26px;
+    }
+}
