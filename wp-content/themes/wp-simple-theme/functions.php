@@ -15,3 +15,8 @@ function class_menu_principal($atts, $item, $args)
     $atts['class'] = $class;
     return $atts;
 }
+
+// Imagenes destacadas
+if (function_exists('add_theme_support')) {
+    add_theme_support('post-thumbnails');
+}

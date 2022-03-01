@@ -9,7 +9,12 @@
 
                 <div class="col-12 col-sm-6 col-md-4 mb-3">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="images/articulo.png" alt="Card image cap">
+                        <a href="<?php the_permalink(); ?>">
+                            <?php
+                            if (has_post_thumbnail()) {
+                                the_post_thumbnail('post-thumbnails', array('class' => 'card-img-top img-fluid'));
+                            } ?>
+                        </a>
                         <div class="card-body">
                             <a href="<?php the_permalink(); ?>">
                                 <h5 class="card-title"><?php the_title(); ?></h5>
@@ -24,7 +29,6 @@
 
         <?php endwhile;
         endif; ?>
-
 
     </div>
 </div>
