@@ -18,6 +18,16 @@ Use it to make something cool, have fun, and share what you've learned
 with others.
 */
 
+.logo {
+    background-image: url('./images/logo.png');
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: -7px 7px;
+}
+
 .suscribir {
     background-image: url('./images/wave.svg');
     background-position: center;
