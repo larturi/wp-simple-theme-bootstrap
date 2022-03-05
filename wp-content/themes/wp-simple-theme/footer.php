@@ -1,7 +1,8 @@
 <!-- Footer -->
+<br><br>
 <div class="container-fluid bg-dark text-white py-3">
 	<div class="container text-center">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae?</p>
+		<p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae?</p>
 	</div>
 </div>
 <!-- Fin Footer -->
