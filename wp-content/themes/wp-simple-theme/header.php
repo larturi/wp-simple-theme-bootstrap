@@ -19,7 +19,13 @@
 	<div class="container-fluid bg-dark fixed-top">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
 			<a class="navbar-brand" href="#">
-				<div class="logo"></div> Bootstrap
+				<div class="logo">
+					<?php if ( function_exists( 'the_custom_logo' ) ) {
+						the_custom_logo();
+						
+					} ?>
+					<div class="logo-title">Bootstrap</div>
+				</div> 
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>

@@ -18,14 +18,14 @@ Use it to make something cool, have fun, and share what you've learned
 with others.
 */
 
-.logo {
-    background-image: url('./images/logo.png');
+.custom-logo-link img {
     width: 30px;
     height: 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    margin: -3px 3px 0px;
+}
+
+.logo-title {
     display: inline-block;
-    margin: -7px 7px;
 }
 
 .suscribir {

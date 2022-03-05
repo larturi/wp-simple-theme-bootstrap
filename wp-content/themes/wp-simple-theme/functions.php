@@ -33,3 +33,17 @@ function my_sidebar() {
     ) );
 }
 add_action('widgets_init', 'my_sidebar');
+
+// Custom Logo 
+function themename_custom_logo_setup() {
+    $defaults = array(
+        'height'               => 30,
+        'width'                => 30,
+        'flex-height'          => true,
+        'flex-width'           => true,
+        'unlink-homepage-logo' => true, 
+    );
+ 
+    add_theme_support( 'custom-logo', $defaults );
+}
+add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
