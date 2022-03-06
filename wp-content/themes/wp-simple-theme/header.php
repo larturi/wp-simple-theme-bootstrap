@@ -22,7 +22,6 @@
 				<div class="logo">
 					<?php if ( function_exists( 'the_custom_logo' ) ) {
 						the_custom_logo();
-						
 					} ?>
 					<div class="logo-title">Bootstrap</div>
 				</div> 
@@ -48,15 +47,22 @@
 		<div class="text-center text-white mt-4">
 			<h1 class="display-5 mt-4 mb-4">Suscribite al Newsletter</h1>
 		</div>
-		<form action="" class="form form-inline flex-column flex-sm-row">
+
+		<form
+			class="form form-inline flex-column flex-sm-row simple_form form form-vertical"
+			action="https://dinardi.ipzmarketing.com/f/PcWHDa3PRvg" 
+			accept-charset="UTF-8" 
+			method="post"
+		>
 			<div class="form-group mr-sm-3">
-				<input type="text" placeholder="Nombre" class="form-control">
+				<input type="text" placeholder="Nombre" class="form-control" name="subscriber[name]" id="subscriber_name" value="">
 			</div>
 			<div class="form-group mr-sm-3">
-				<input type="text" placeholder="Email" class="form-control">
+				<input type="text" placeholder="Email" class="form-control" name="subscriber[email]" id="subscriber_email" value="">
 			</div>
 
-			<input type="submit" value="Enviar" class="btn btn-primary">
+			<input type="submit" value="Enviar" class="btn btn-primary" name="commit">
 		</form>
+
 	</div>
 	<!-- Fin Suscribir -->
